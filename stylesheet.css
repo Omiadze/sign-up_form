@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@400;800&family=Skranji:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background: url(geranimo-WJkc3xZjSXw-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+}
+.logo-content{
+    display: flex;
+    color: aliceblue;
+    
+    
+    align-items: center;
+    justify-content: center;
+    font-family: 'REM', sans-serif;
+    font-weight: 800;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    opacity: 50%;
+}
+.main{
+    height: 600px;
+    
+}
+.header, .form, .footer{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header{
+    background-color: rgb(249,250,251);
+    height: 30%;
+    font-weight: bolder;
+}
+.header > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main-p{
+    margin-top: 65px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr ;
+    column-gap: 4px;
+    row-gap: 10px;
+    
+}
+.form{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 5px;
+    height: 55%;
+    
+    
+}
+h2{
+    margin-bottom: 20px;
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    background-color: rgb(249,250,251);
+    height: 15%;
+}
+button{
+    margin-top: 20px;
+    background-color: rgb(89,109,72); /* Green */
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* invalid values */
+#error{
+    display: none;
+}
+input:not(:focus):not(:placeholder-shown):invalid{
+    border: 1px solid red;
+}
+input:not(:focus):not(:placeholder-shown):invalid ~ #error{
+   display: block;
+   color: red;
+}
+button:hover{
+    opacity: 70%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.log-in{
+    display: flex;
+    margin-top: 15px;
+    gap: 6px;
+}
+a{
+    text-decoration: none;
+    color: rgb(89,109,72); ;
+}
+
+
+@media only screen and (min-width: 600px){
+    body{
+        display: flex;
+
+    }
+    .background{
+        height: 600px;
+    }
+    form{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        
+        
+    }
+    .form{
+        height: 45%;
+    }
+    .footer{
+        height: 25%;
+        
+    }
+    h2{
+        padding-top: 30px;
+    }
+
+}
+
+
